@@ -171,7 +171,10 @@ body {
 }
 
 .our-skills {
-  background-color: #2e2f42;
+  background-image: ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .order-service {
