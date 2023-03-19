@@ -331,3 +331,12 @@ body {
   color: #ffffff;
   letter-spacing: 0.02em;
 }
+
+.teg-a:hover,
+.teg-a:focus {
+  display: contents;
+  border-radius: 0px 0px 4px 4px;
+  color: #404bbf;
+  margin-top: 8px;
+  padding-right: 16px;
+}
