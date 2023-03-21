@@ -317,12 +317,9 @@ body {
 .logo-ul1 {
   display: flex;
   gap: 16px;
-  padding-top: 16px;
-  padding-left: 120px;
 }
 
 .social {
-  padding-left: 120px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -339,4 +336,8 @@ body {
   color: #404bbf;
   margin-top: 8px;
   padding-right: 16px;
+}
+
+.ftr {
+  margin-left: 120px;
 }
