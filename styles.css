@@ -189,6 +189,8 @@ body {
   border: none;
 }
 .our-skills {
+  max-width: 1440px;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -391,8 +393,6 @@ ul {
   /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); */
   border-radius: 0px 0px 4px 4px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .container-list-icon {
@@ -403,40 +403,59 @@ ul {
 }
 
 .svg-icon {
-  width: 40px;
-  height: 40px;
+  width: 62px;
+  height: 64px;
 }
 .svg-our-list {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
+  padding: 12px;
   border-radius: 50%;
   background-color: #4d5ae5;
 }
 .svg-our-list:hover,
 .svg-our-list:focus {
-  color: #404bbf;
+  background-color: #404bbf;
+  border-radius: 50%;
+
+  /* color: #404bbf; */
 }
 
 .svg-our {
+  /* width: 16px;
+  max-height: 16px; */
+  display: flex;
+  flex: 0 0 16px;
   width: 16px;
-  max-height: 16px;
+  height: 16px;
   border: 1px solid transparent;
 
   /* padding: 12px 12px 12px 12px; */
   /* width: 16px;
   height: 16px; */
 
-  fill: currentColor;
+  fill: indianred;
   /* border-radius: 50%; */
+}
+.teg-a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 0 0 40px;
+  justify-content: center;
+  align-items: center;
 }
 .ul-svg {
   display: flex;
+  justify-content: center;
   gap: 24px;
-  margin-left: 16px;
-  padding-top: 8px;
+  margin-top: 8px;
+
   /* width: 40px;
   height: 40px; */
   /* border-radius: 50%; */
@@ -457,11 +476,13 @@ ul {
   border: 1px solid transparent;
   justify-content: center;
   align-items: center;
+  fill: indianred;
 }
 
 .svg-logo-list {
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 .svg-our-list-footer {
@@ -475,20 +496,21 @@ ul {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.svg-our-list-footer:hover,
-.svg-our-list-footer:focus {
-  color: #404bbf;
+.svg-our-footer:hover,
+.svg-our-footer:focus {
+  background-color: #31d0aa;
+  border-radius: 50%;
 }
 
 .svg-our-footer {
   /* flex-direction: column; */
-  width: 16px;
-  max-height: 16px;
+  width: 24px;
+  max-height: 24px;
   border: 1px solid transparent;
   /* padding: 12px 12px 12px 12px; */
   /* width: 16px;
   height: 16px; */
-
+  display: block;
   fill: currentColor;
   /* border-radius: 50%; */
 }
@@ -516,15 +538,12 @@ ul {
 .logo-ul1 {
   display: flex;
   gap: 16px;
-  padding-top: 16px;
-  padding-left: 120px;
 }
-.logo-ul1:hover,
+/* .logo-ul1:hover,
 .logo-ul1:focus {
-}
+} */
 
 .social {
-  padding-left: 120px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -532,13 +551,84 @@ ul {
   line-height: 24px;
   color: #ffffff;
   letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
-.teg-a:hover,
+/* .teg-a:hover,
 .teg-a:focus {
   display: contents;
   border-radius: 0px 0px 4px 4px;
   color: #404bbf;
   margin-top: 8px;
   padding-right: 16px;
+} */
+/* ==================customers=========================== */
+.customers-section {
+}
+
+.customers-decorative-container {
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.customers-link {
+  display: block;
+}
+.customers-item {
+}
+/* .custemers-link:hover,
+.custemers-link:focus {
+  border-color: #404bbf;
+  border: 11px solid#404bbf;
+} */
+
+.customers-link:hover > .customers-logo,
+.customers-link:focus > .customers-logo {
+  fill: #404bbf;
+  border-color: #404bbf;
+}
+.customers-logo {
+  width: 168px;
+  height: 88px;
+  fill: #8e8f99;
+  padding: 16px 32px;
+  display: block;
+  border: 1px solid #8e8f99;
+}
+
+.team-decorative-container {
+  padding-top: 32px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 32px;
+}
+.teg-footer {
+}
+.decorative-container-footer1 {
+  margin-right: 128px;
+}
+.teg-footer:hover,
+.teg-footer:focus {
+  background-color: #31d0aa;
+  border-radius: 50%;
+  flex-direction: column;
+  /* align-content: column; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #31d0aa;
+  border-radius: 50%;
+}
+
+.svg-our-list-footer:hover,
+.svg-our-list-footer:focus {
+  background-color: #31d0aa;
 }
